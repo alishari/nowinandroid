@@ -190,7 +190,7 @@ Using the above modularization strategy, the Now in Android app has the followin
    </td>
    <td>Making network requests and handling responses from a remote data source.
    </td>
-   <td><code>RetrofitNiaNetworkApi</code>
+   <td><code>KtorNiaNetworkApi</code>
    </td>
   </tr>
   <tr>

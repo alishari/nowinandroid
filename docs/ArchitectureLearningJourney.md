@@ -96,7 +96,7 @@ Here's what's happening in each step. The easiest way to find the associated cod
   <tr>
    <td>5
    </td>
-   <td><code>OfflineFirstNewsRepository</code> calls <code>RetrofitNiaNetwork</code> to execute the actual API request using <a href="https://square.github.io/retrofit/">Retrofit</a>.
+   <td><code>OfflineFirstNewsRepository</code> calls <code>KtorNiaNetwork</code> to execute the actual API request using <a href="https://github.com/ktorio/ktor">Ktor</a>.
    </td>
    <td><code>OfflineFirstNewsRepository.syncWith</code>
    </td>
@@ -104,17 +104,17 @@ Here's what's happening in each step. The easiest way to find the associated cod
   <tr>
    <td>6
    </td>
-   <td><code>RetrofitNiaNetwork</code> calls the REST API on the remote server.
+   <td><code>KtorNiaNetwork</code> calls the REST API on the remote server.
    </td>
-   <td><code>RetrofitNiaNetwork.getNewsResources</code>
+   <td><code>KtorNiaNetwork.getNewsResources</code>
    </td>
   </tr>
   <tr>
    <td>7
    </td>
-   <td><code>RetrofitNiaNetwork</code> receives the network response from the remote server.
+   <td><code>KtorNiaNetwork</code> receives the network response from the remote server.
    </td>
-   <td><code>RetrofitNiaNetwork.getNewsResources</code>
+   <td><code>KtorNiaNetwork.getNewsResources</code>
    </td>
   </tr>
   <tr>
@@ -232,7 +232,7 @@ A repository may depend on one or more data sources. For example, the `OfflineFi
   <tr>
    <td>NiaNetworkDataSource
    </td>
-   <td>Remote API accessed using Retrofit
+   <td>Remote API accessed using Ktor
    </td>
    <td>Data for topics, provided through REST API endpoints as JSON.
    </td>

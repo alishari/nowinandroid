@@ -17,7 +17,7 @@
 package com.google.samples.apps.nowinandroid.core.network.di
 
 import com.google.samples.apps.nowinandroid.core.network.NiaNetworkDataSource
-import com.google.samples.apps.nowinandroid.core.network.retrofit.RetrofitNiaNetwork
+import com.google.samples.apps.nowinandroid.core.network.ktor.KtorNiaNetwork
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -28,5 +28,5 @@ import dagger.hilt.components.SingletonComponent
 internal interface FlavoredNetworkModule {
 
     @Binds
-    fun binds(impl: RetrofitNiaNetwork): NiaNetworkDataSource
+    fun binds(impl: KtorNiaNetwork): NiaNetworkDataSource
 }
